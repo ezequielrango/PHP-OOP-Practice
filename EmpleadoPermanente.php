@@ -10,9 +10,7 @@ class EmpleadoPermanente extends Empleado implements IPersona
     public function __construct($nombre, $apellido, $dni, $salario,DateTime $fechaIngreso = null)
     {
         parent::__construct($nombre, $apellido, $dni, $salario); // lo abstraje por la clase madre, todo lo que es $this->
-        //TODO: Construir el método constructor
         
-        // La parte de la fecha está resuelta:
         if (is_null($fechaIngreso)) {
             //Asigna hoy como fecha de ingreso:
             $this->fechaIngreso = new DateTime();
@@ -33,7 +31,7 @@ class EmpleadoPermanente extends Empleado implements IPersona
     }
 
     public function calcularComision() {
-        // TODO: Construir este método
+
         return self::ComisionPorAnio * $this->calcularAntiguedad() * $this->salario;
     }
     

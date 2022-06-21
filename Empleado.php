@@ -66,4 +66,5 @@ se utliza parent:: para indicar que esas propiedas las tiene la madre, si no las
 abstract impide que se cree una nueva clase madre
 POLIMORFISMO : el metodo calcular ingresoTotal necesita del metodo calcularComision, que no se encuentra en la clase madre. Con asbtract obligamos a q si hacemos una clase hija que herede de la madre, si o si tenga el metodo abstracto
 Mando datos objeto ocmo string al archivo ver datos, luego de table en verDatos.php
+Implementar interface
 */
